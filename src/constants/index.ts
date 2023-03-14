@@ -3,8 +3,9 @@ import { AbstractConnector } from '@web3-react/abstract-connector'
 
 // import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
 import { injected, bsc } from '../connectors'
-// COREDAO
-export const ROUTER_ADDRESS = '0x74f56a7560ef0c72cf6d677e3f5f51c2d579ff15'
+// COREDAO 0x74f56a7560ef0c72cf6d677e3f5f51c2d579ff15'
+//      new Token(ChainId.MAINNET, '0x1a639e150d2210a4be4a5f0857a9151b241e7ae4', 18, 'BOW TOKEN', 'PancakeSwap Token'),
+export const ROUTER_ADDRESS = '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -54,7 +55,7 @@ export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
 export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } = {
   [ChainId.MAINNET]: [
     [
-      new Token(ChainId.MAINNET, '0x1a639e150d2210a4be4a5f0857a9151b241e7ae4', 18, 'BOW TOKEN', 'PancakeSwap Token'),
+      new Token(ChainId.MAINNET, '0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82', 18, 'CAKE', 'PancakeSwap Token'),
       new Token(ChainId.MAINNET, '0xbb4cdb9cbd36b01bd1cbaebf2de08d9173bc095c', 18, 'WBNB', 'Wrapped BNB')
     ],
     [BUSD, USDT],
